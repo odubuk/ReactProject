@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 //import Item from './Item';
-import List from './List';
-import ButtonClick from './ButtonClick';
+//import List from './List';
+//import ButtonClick from './ButtonClick';
 import MyFriendsList from './MyFriendsList';
 
 
@@ -16,10 +16,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           {/*Edit <code>src/App.js</code> and save to reload.*/}
-          <List />
+      {/*<List />*/}
         </p>
         <MyFriendsList />
-        <ButtonClick />
+      {/*<ButtonClick />*/}
         <a
           className="App-link"
           href="https://reactjs.org"

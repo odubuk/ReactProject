@@ -4,7 +4,7 @@ class MyFriendsList extends React.Component{
     constructor(props){
         super(props);
         this.state = {friends: [{name: "Owen", phoneNumber: "111-1111", address:"123 Somewhere St"
-        },,
+        }
     ]}
 }
     handleFormSubmit = ()=> {
@@ -18,7 +18,6 @@ class MyFriendsList extends React.Component{
         }
         this.setState({friends: [...this.state.friends, newFriends]})
         console.log(this.state)
-        debugger
     }
         
 render(){
@@ -32,9 +31,10 @@ render(){
         ) 
         return(
             <div>
+            {myFriendsListHtml}
               <form>
                 <input id="name" placeholder="Name"/>
-                <input id="phoneNumber" placeholder="phoneNumber"/>
+                <input id="phoneNumber" placeholder="Phone Number"/>
                 <input id="address" placeholder="Address"/>
               </form>
               <button onClick={this.handleFormSubmit}>Submit</button>
