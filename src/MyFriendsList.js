@@ -35,7 +35,7 @@ render(){
               <form>
                 <input id="name" placeholder="Name"/>
                 <input id="phoneNumber" placeholder="Phone Number"/>
-                <input id="address" placeholder="Address"/>
+                <input id="address" placeholder="Home Address"/>
               </form>
               <button onClick={this.handleFormSubmit}>Submit</button>
             </div>
