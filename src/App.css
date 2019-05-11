@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin-opacity infinite 4s linear;
+  animation: App-logo-spin-opacity infinite 30s linear;
   animation-direction: alternate;
   height: 40vmin;
   pointer-events: none;
