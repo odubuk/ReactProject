@@ -4,7 +4,7 @@ import './App.css';
 //import Item from './Item';
 import List from './List';
 import ButtonClick from './ButtonClick';
-/* import FormSubmit from './FormSubmit'; */
+import MyFriendsList from './MyFriendsList';
 
 
 
@@ -18,7 +18,7 @@ function App() {
           {/*Edit <code>src/App.js</code> and save to reload.*/}
           <List />
         </p>
-      {/*<FormSubmit />*/}
+        <MyFriendsList />
         <ButtonClick />
         <a
           className="App-link"
