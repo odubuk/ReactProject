@@ -7,9 +7,7 @@ class MyFriendsList extends React.Component{
         },,
     ]}
 }
-    
-render(){
-    const handleFormSubmit = ()=> {
+    handleFormSubmit = ()=> {
         const name = document.getElementById('name').value;
         const phoneNumber = document.getElementById('phoneNumber').value;
         const address = document.getElementById('address').value;
@@ -19,15 +17,19 @@ render(){
             address
         }
         this.setState({friends: [...this.state.friends, newFriends]})
+        console.log(this.state)
+        debugger
+    }
         
+render(){
         const myFriendsListHtml = this.state.friends.map(friend =>
                                                          
-        <div key={friend.name}>
-          <h1>{friend.name}</h1>
-          <p>{friend.phoneNumber}</p>
-          <p>{friend.address}</p>
-        </div>
-)
+            <div key={friend.name}>
+              <h1>{friend.name}</h1>
+              <p>{friend.phoneNumber}</p>
+              <p>{friend.address}</p>
+            </div>
+        ) 
         return(
             <div>
               <form>
@@ -35,11 +37,11 @@ render(){
                 <input id="phoneNumber" placeholder="phoneNumber"/>
                 <input id="address" placeholder="Address"/>
               </form>
-              <button onClick={handleFormSubmit}>Submit</button>
+              <button onClick={this.handleFormSubmit}>Submit</button>
             </div>
             )
         }
     }
-}
+
 
 export default MyFriendsList
