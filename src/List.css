@@ -1,0 +1,19 @@
+.list {
+  text-align: block;
+  justify-content: center;
+  font-size: calc (14px + 4vmin);
+  color: #61dbfb;
+  animation: List-color-opacity infinite 0.4s linear;
+  animation-direction: alternate;
+}
+
+/*
+@keyframes List-color-opacity {
+  from {
+    opacity: 1.0;
+    }
+  to {
+    opacity: 0.6;
+    }
+}
+*/
