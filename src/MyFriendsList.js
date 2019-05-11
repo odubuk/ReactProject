@@ -25,6 +25,7 @@ render(){
                                                          
             <div key={friend.name}>
               <h1>{friend.name}</h1>
+                                                         
               <p>{friend.phoneNumber}</p>
               <p>{friend.address}</p>
             </div>
